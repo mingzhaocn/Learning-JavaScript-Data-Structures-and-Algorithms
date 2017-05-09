@@ -1,5 +1,5 @@
-class Stack {
-  exconstructor() {
+module.exports = class Stack {
+  constructor() {
     this.items = [];
   }
 
@@ -28,6 +28,6 @@ class Stack {
   }
 
   print() {
-    console.log(this.items.toString())
+    console.log(this.items.toString());
   }
 }
