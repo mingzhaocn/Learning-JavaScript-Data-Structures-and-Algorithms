@@ -1,3 +1,7 @@
+/**
+ * @desc LIFO last in first out
+ * @type {Stack}
+ */
 module.exports = class Stack {
   constructor() {
     this.items = [];
@@ -30,4 +34,4 @@ module.exports = class Stack {
   print() {
     console.log(this.items.toString());
   }
-}
+};

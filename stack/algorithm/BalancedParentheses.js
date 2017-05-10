@@ -1,8 +1,9 @@
+const Stack = require('../Stack');
 /**
  * 平衡圆括号
+ * @param Symbols
+ * @returns {boolean|*}
  */
-const Stack = require('../Stack');
-
 function parenthesesChecker(Symbols) {
   const opens = '{[(',
     closers = '}])',
