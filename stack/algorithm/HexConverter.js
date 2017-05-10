@@ -3,11 +3,13 @@
  * @param decNumber
  * @param base
  */
+
 const Stack = require('../Stack');
-module.exports = function baseConverter(decNumber, base) {
+
+function baseConverter(decNumber, base) {
   let convertedString = "";
-  const remStack = new Stack();
-  const digits = '0123456789ABCDEF';
+  const remStack = new Stack(),
+    digits = '0123456789ABCDEF';
 
   while (decNumber > 0) {
     remStack.push(decNumber % base);
@@ -19,3 +21,5 @@ module.exports = function baseConverter(decNumber, base) {
   }
   return convertedString;
 }
+
+console.log('1024(10) -> X(2) : ', baseConverter(1024, 2));//10000000000
