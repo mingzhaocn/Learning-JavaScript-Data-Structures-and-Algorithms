@@ -4,34 +4,43 @@
  */
 module.exports = class Stack {
   constructor() {
-    this.items = [];
+    this.elements = [];
   }
 
+  /**
+   * 进栈
+   * @param item
+   * @returns {Number}
+   */
   push(item) {
-    return this.items.push(item);
+    return this.elements.push(item);
   }
 
+  /**
+   * 出栈
+   * @returns {*}
+   */
   pop() {
-    return this.items.pop();
+    return this.elements.pop();
   }
 
   peek() {
-    return this.items[this.items.length - 1];
+    return this.elements[this.elements.length - 1];
   }
 
   isEmpty() {
-    return this.items.length === 0;
+    return this.elements.length === 0;
   }
 
   size() {
-    return this.items.length;
+    return this.elements.length;
   }
 
   clear() {
-    this.items = [];
+    this.elements = [];
   }
 
   print() {
-    console.log(this.items.toString());
+    console.log(this.elements.toString());
   }
 };
